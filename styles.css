@@ -102,7 +102,7 @@
 @media(min-width: 1200px){
 
     .featurette{
-        width:1600px; 
+        max-width:1600px; 
         height: 700px;  
         position: relative;
         left: 50%;
