@@ -9,41 +9,71 @@
 
 <body>
     <br>
-    <h1 class = 'main-title'>Newfoundland and Labrador</h1>
-    <h1 class = 'main-title'>(Upcoming) Road Test Dates</h1>
+    <h1 class = 'main-title'>Road Test Dates</h1>
+    <h1 class = 'title'>Newfoundland and Labrador</h1>
     <hr class="featurette-divider">
     <br>
     <br>
     
     <div class = 'visual'>
+        
+        <br>
         <div class = 'gridbox'>
             
-            <div class = 'location'>
-                <img class = 'town_img' src = "images/data_scrape/StJohns.png">
-                <div class = 'dates'>Available Dates</div>
+            <div class = 'location' id = 'MP'>
+                <div>
+                    <img class = 'town_img' src = "images/data_scrape/MtPearl.png">
+                    <div class = 'dates'>MOUNT PEARL</div>
+                    <div class = 'dates'>Available Dates:</div>
+                </div>
+                
                 <h3 id = 'MP-info'>CLICK ↓</h3>
-                <div><button class ="btn" id = 'MP' onclick="getMP()">REFRESH</button></div>
+                <div><button class ="btn" onclick="getMP()">REFRESH</button></div>
             </div>
 
-            <div class = 'location'>
-                <img class = 'town_img' src = "images/data_scrape/Clarenville.png">
-                <div class = 'dates'>Available Dates</div>
+            <div class = 'location' id = 'CV'>
+                <div>
+                    <img class = 'town_img' src = "images/data_scrape/Clarenville.png">
+                    <div class = 'dates'>CLARENVILLE</div>
+                    <div class = 'dates'>Available Dates:</div>
+                </div>
+                
                 <h3 id = 'CV-info'>CLICK ↓</h3>
-                <div><button class ="btn" id = 'CV' onclick="getCV()">REFRESH</button></div>
+                <div><button class ="btn"  onclick="getCV()">REFRESH</button></div>
             </div>
 
-            <div class = 'location'>
-                <img class = 'town_img' src = "images/data_scrape/BayRoberts.png">
-                <div class = 'dates'>Available Dates</div>
+            <div class = 'location' id = 'BR'>
+                <div>
+                    <img class = 'town_img' src = "images/data_scrape/BayRoberts.png">
+                    <div class = 'dates'>BAY ROBERTS</div>
+                    <div class = 'dates'>Available Dates:</div>
+                </div>
+                
                 <h3 id ='BR-info'>CLICK ↓</h3>
-                <div><button class ="btn" id = 'BR' onclick="getBR()">REFRESH</button></div>
+                <div><button class ="btn"  onclick="getBR()">REFRESH</button></div>
+            </div>
+        </div>
+
+        <div id = 'refresh-all'>
+            <div>
+                <button id = 'MASTER' onclick="getALL()"><img src="images/data_scrape/refresh_all.png"></button>
+                
             </div>
         </div>
         
         <br>
         <br>
         <br>
-        <h4 class = 'technology'>Technologies Used: SELENIUM, JQUERY, JS, INSOMNIA, AXIOS</h4>        
+        <h4 class = 'technology'>Technologies Used: </h4>
+        <h4 class = 'technology'>GOOGLE CLOUD,</h4>
+        <h4 class = 'technology'>INSOMNIA, AXIOS, SELENIUM</h4>        
+        <h4 class = 'technology'>NODE.JS, JQUERY,JS, CSS, HTML</h4>        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <br>
 
@@ -51,7 +81,13 @@
     </div>
 
     <hr class="featurette-divider">
-
+    <div class = "tail">
+        <div class = "btn2">
+            <p><a class="btn2 btn-lg go-top" href="index.html">Back to Main Page</a></p>
+        </div>
+        <br>
+        
+    </div>
 
 
 

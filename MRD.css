@@ -1,37 +1,51 @@
-@media (max-width:1200px) {
-    .plotted_img{
-        text-align: center;
-        width: 90vw;
-        padding-left: 5vw;
-        padding-right: 20px;
+
+@media (max-width:620px) {
+    .gridbox{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-left: 30%;
+        margin-right: 30%;
+        
+    }
+    
+    
+}
+
+@media (min-width:800px) {
+    .gridbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 3%;
+        margin-right: 3%;
+        
     }
     
 }
 
 @media (min-width:1200px) {
-    .plotted_img_div{
-        text-align: center;
-    }
-    .plotted_img{
-        text-align: center;
-        max-width: 1200px;
+    .gridbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+        
     }
     
 }
 
-.gridbox{
-    /* display: -ms-inline-grid; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
 .location{
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
     justify-content: center;
     text-align: center;
-    
+    background-color: rgba(255, 255, 0, 0.2);
+    border-radius: 1rem;
+    margin: 1.5%;
+    height: 450px;
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
+
 
 .btn{
     padding: 15px 25px;
@@ -46,6 +60,7 @@
     border: none;
     border-radius: 0.3rem;
     box-shadow: 0 9px #999;
+    height: 35px;
   }
 
 .btn:hover {background-color: #3e8e41}
@@ -53,19 +68,52 @@
 .btn:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  transform: translateX(-2px) translateY(4px);
+}
+
+#refresh-all{
+    margin-top: 100px;
+    margin-bottom: -70px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#MASTER img{
+    width: 180px;
+    height: 210px;
+    outline: none;
+}
+
+#MASTER:active {
+    transform: translateX(0px) translateY(4px);
+  }
+
+#MASTER{
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: white;
+    border: none;
 }
 
 .main-title{
     text-align: center;
-    font-size: 3.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 3000;
+    font-size: 7.2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .title{
     text-align: center;
+    font-weight: 900;
     font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -5rem;
+    background-color: black;
+    color: white;
+    margin-left: 22%;
+    margin-right: 22%;
 }
 
 .technology{
@@ -87,8 +135,6 @@ button{
     border-radius: 2px;
     border-color: gray;
     background: #f6f6f6;
-    width: 100px;
-    height: 35px;
     font-size: 0.8rem;
     color: black;
     font-weight: 600;
@@ -98,131 +144,12 @@ button{
 }
 
 
-.scroll-container {
-    width: 100%; 
-    height: 150px; 
-    overflow-x: auto; 
-    display: flex; 
-    align-items: center; 
-    white-space: nowrap; 
-}
-
-/* Style for individual items within the container */
-.item {
-    flex: 0 0 auto; 
-    width: 200px; 
-    height: 100px; 
-    margin-right: 20px; 
-    background-color: #f0f0f0; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    border: 1px solid #ccc; 
-}
-
-#plotly-pie{
-    width:720px;
-    height:750px;
-    justify-content: center;
-    text-align: center;
-    border: none;
-}
-
-#plotly-stock{
-    width:90%;
-    height:650px;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    z-index: 1;
-}
-
-.iframe-control{
-    justify-content: center;
-    text-align: center;
-}
-
-.matplotlib-pie{
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 130px;
-    margin-bottom: 35px;
-}
-
-#plotly-bar{
-    width:1000px;
-    height:650px;
-    margin-left: -80px;
-    justify-content: center;
-    text-align: center;
-    border: none;
-}
 
 .featurette-divider{
     width: 70%;
 }
 
-#bottom-comment{
-    font-weight: 200;
-    font-size: x-small;
-    text-align: center;
-}
 
-.subtitle{
-    text-align: center;
-}
-
-.explanation{
-    text-align: left;
-    font-weight: 300;
-    margin-left: 13%;
-}
-
-.caption #upper-exp{
-    margin-top: 50px;
-    margin-bottom: -20px;
-    color: blue;
-}
-
-.caption{
-    margin-bottom: -70px;
-    margin-left: 15%;
-    z-index: 100;
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.caption h3{
-    z-index: 100;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.intro{
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 22px;
-    
-}
-
-.after-thought h3{
-    margin-left: 13%;
-    margin-right: 13%;
-    font-size: 23px;
-    text-align: center;
-    font-weight: 200;
-    
-}
-.after-thought{
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: -10px;
-}
-
-.caveat{
-    text-align: center;
-    font-weight: 300;
-    font-size: 1rem;
-}
 
 .go-top{
     font-size: 2rem;
@@ -231,4 +158,20 @@ button{
 .town_img{
     width: 200px;
     height: 200px;
+}
+
+#bottom-comment{
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 7px;
+}
+
+.btn2{
+    justify-content: center;
+    text-align: center;
+}
+.tail{
+    margin-bottom: 40px;
 }
