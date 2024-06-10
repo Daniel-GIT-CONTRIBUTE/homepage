@@ -136,7 +136,7 @@ async function getCV(){
 
 async function getMP(){
     try{
-        const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/corsEnabledFunction')
+        const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape')
         console.log('hi');
         $('#MP-info').text(response);
     } catch (error) {
