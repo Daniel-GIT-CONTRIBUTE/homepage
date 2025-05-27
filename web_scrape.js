@@ -11,9 +11,9 @@ async function fetchScrapedData() {
 
 async function getBR(){
     try{
-        const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=BR')
-        const data = await response.json(); 
-        displayList(data, '#BR-info');
+        // const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=BR')
+        // const data = await response.json(); 
+        // displayList(data, '#BR-info');
     } catch (error) {
         console.log(error);
     }
@@ -21,9 +21,9 @@ async function getBR(){
 
 async function getCV(){
     try{
-        const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=CV')
-        const data = await response.json(); 
-        displayList(data, '#CV-info');
+        // const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=CV')
+        // const data = await response.json(); 
+        // displayList(data, '#CV-info');
     } catch (error) {
         console.error('Error fetching data:', error.message); 
     }
@@ -31,9 +31,9 @@ async function getCV(){
 
 async function getMP(){
     try{
-        const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=MP')
-        const data = await response.json(); 
-        displayList(data, '#MP-info');
+        // const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=MP')
+        // const data = await response.json(); 
+        // displayList(data, '#MP-info');
     } catch (error) {
         console.error('Error fetching data:', error.message); 
     }
