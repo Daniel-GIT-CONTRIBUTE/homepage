@@ -130,3 +130,10 @@ h2.lead{
 }
 
 
+.btn2{
+    justify-content: center;
+    text-align: center;
+}
+.tail{
+    margin-bottom: 40px;
+}

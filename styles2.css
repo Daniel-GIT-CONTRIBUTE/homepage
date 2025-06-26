@@ -190,3 +190,13 @@ button{
 .go-top{
     font-size: 2rem;
 }
+
+.btn2{
+    justify-content: center;
+    text-align: center;
+}
+
+#go-top{
+    justify-content: center;
+    text-align: center;
+}
