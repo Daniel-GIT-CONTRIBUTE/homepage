@@ -1,0 +1,353 @@
+
+#head-content{
+    display: inline-flex;
+}
+
+#popup{
+    display: none;
+    position: fixed;
+    border-radius: 1rem;
+    border-width: 3px;
+    z-index: 100;
+    color:aliceblue;
+    background-color: black;
+    opacity: 80%;
+    width: 500px;
+    height: 210px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+#gif-popup{
+    display: none;
+    position: fixed; 
+    filter: hue-rotate(55deg) brightness(0.7);
+    z-index: 100;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#close-popup{
+    text-align: right;
+}
+#close-popup button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding-right: 20px;
+    margin-top:-5px;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact-detail{
+    text-align: left;
+    margin-left: 60px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.copy{
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    background-image: url("images/copy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 15px;
+    height: 20px;
+    width: 19px;
+    
+}
+
+.contact-about{
+    display: inline-flex;
+    gap: 10px;
+    width: 500px;
+    margin-top: 20px;
+    text-align: center;
+}
+.contact{
+    /* background-color: darkolivegreen; */
+    /* background-color: #fce041; */
+    background-color: white;
+    border-radius: 2rem;
+    width: 130px;
+    color: black;
+    border-style: solid;
+    border-width: 4.5px;
+    border-color: black;
+    transition: border-color 0.3s ease;
+    text-shadow: 0.5px 0.5px 0px black;
+    padding-top: 7px;
+}
+.about{
+    background-color: black;
+    border-radius: 2rem;
+    border-width: 4px;
+    border-style: solid;
+    border-color: white;
+    /* border-color: #fce041; */
+    /* border-color: darkolivegreen;; */
+    transition: border-color 0.5s ease;
+    width: 120px;
+    color:white;
+    /* color: #fce041; */
+    /* color: darkolivegreen; */
+    text-shadow: 0.5px 0.1px 5px black;
+    padding-top: 7px;
+    
+}
+
+.about:hover {
+    border-color: black; /* Change border color to blue on hover */
+    background-color: lightslategray;
+}
+
+.contact:hover{
+    border-color: white; /* Change border color to blue on hover */
+}
+
+.portrait{
+    border-radius: 6rem;
+    border-width: 7px;
+    
+    border-style: solid;
+    color: white;
+    /* color: darkolivegreen; */
+    /* color: #fce041;; */
+    /* color: whitesmoke; */
+    height: auto;
+}
+
+
+
+
+
+.head-container .featurette{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.top-row-left{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    order: 2;
+    
+}
+
+.top-row-left h2.name{
+    color: black !important;
+    text-shadow: 0.5px 0.5px 2px white;
+    
+}
+.top-row-left h2.lead{
+    text-shadow: 1px 1px 5px black;
+    font-weight:400!important ;    
+    margin-top: -30px;
+    color: white;
+}
+
+
+
+.top-row-left h2.name span{
+    background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    /* #fce041 50% */
+    /* darkolivegreen 50% */
+    );
+}
+
+.tag-box{
+    display: inline-flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.tag-box h5{
+    color: white;
+}
+.tags{
+    background-color: #4599ed;
+    font-size: 11px;
+    border-radius: 0.3rem;
+    border: 6px solid #4599ed;
+    margin-right: 4px;
+}
+
+.proj-info{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+.featurette{
+    justify-content: center;
+    padding-bottom: 30px;
+    background-image: url("images/mojave.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+.featurette .lead{
+    font-weight: 600;
+}
+
+.top-row-right{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    justify-content: center;
+    align-items: center;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    order: 2;
+    
+}
+
+
+.go-top{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+
+
+.text-body-secondary{
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 44px;
+    font-weight: 900;   
+}
+
+.col-md-7{
+    gap: -20px;
+}
+.other-skills p{
+    margin-bottom: 0px;
+}
+.other-skills  h5{
+    
+    font-size: 10px;
+}
+
+.container1{
+    /* padding: 0px; */
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.8);
+    z-index: 1;
+    width: 100vw;
+    padding-top: 1%;
+    padding-bottom: .8%;
+    margin-left: -1%;
+    margin-top: -1%;
+    margin-right: -1%
+}
+
+.nav-pills .nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-pills .nav-link.active{
+    background-color: black !important;
+}
+
+.nav-pills .nav-link.active:hover{
+    background-color: white !important;
+    color: black;
+}
+
+.nav-pills .nav-link:hover{
+    color: black;
+}
+
+
+.featurette-divider{
+    position: relative;
+    top: -93px;
+    opacity: 0;
+
+}
+
+.container.px-4.py-5{
+    padding-top: 10px !important;
+}
+
+.subtitle{
+    padding: -10px;
+    margin-bottom: -20px;
+
+}
+
+#bottom-comment{
+    font-weight: 200;
+    font-size: x-small;
+    text-align: center;
+}
+
+.row .logo-div{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+}
+.row .logo{
+    padding-bottom: 3px;
+}
+
+.go-to{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 15px;
+    color:darks;
+    text-align: center;
+}
+
+.fluency{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.gif-container{
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;   
+}
+
+.gif{
+    margin-bottom: 30px;
+}
+
+.button{
+    color: white;
+    background-color: black;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 4rem!important;
+    height: 4rem!important;
+}
